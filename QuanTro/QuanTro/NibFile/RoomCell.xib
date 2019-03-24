@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomCell" rowHeight="100" id="2yo-39-qEo" customClass="RoomCell" customModule="QuanTro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2yo-39-qEo" id="g1k-J1-BLI">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B0R-H2-wBK">
+                        <rect key="frame" x="15" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="9o9-cf-doY"/>
+                            <constraint firstAttribute="height" constant="80" id="d0J-AL-Wgb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbB-l7-8ZD">
+                        <rect key="frame" x="103" y="18" width="261" height="0.0"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKo-7x-0sn">
+                        <rect key="frame" x="136" y="73.5" width="228" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roomer" translatesAutoresizingMaskIntoConstraints="NO" id="FXR-P5-gk9">
+                        <rect key="frame" x="103" y="61" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="RUN-KL-rki"/>
+                            <constraint firstAttribute="width" constant="25" id="jLL-TQ-uEC"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MbB-l7-8ZD" firstAttribute="top" secondItem="B0R-H2-wBK" secondAttribute="top" constant="8" id="3En-Oi-xuJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="MbB-l7-8ZD" secondAttribute="trailing" constant="8" id="5KT-IA-2HS"/>
+                    <constraint firstItem="FXR-P5-gk9" firstAttribute="leading" secondItem="B0R-H2-wBK" secondAttribute="trailing" constant="8" id="6RN-XL-7VB"/>
+                    <constraint firstItem="nKo-7x-0sn" firstAttribute="leading" secondItem="FXR-P5-gk9" secondAttribute="trailing" constant="8" id="AwL-00-p9d"/>
+                    <constraint firstItem="nKo-7x-0sn" firstAttribute="centerY" secondItem="FXR-P5-gk9" secondAttribute="centerY" id="SlK-9b-z0x"/>
+                    <constraint firstItem="MbB-l7-8ZD" firstAttribute="leading" secondItem="B0R-H2-wBK" secondAttribute="trailing" constant="8" id="d0n-JI-ixg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nKo-7x-0sn" secondAttribute="trailing" constant="8" id="fsV-qK-g3l"/>
+                    <constraint firstItem="B0R-H2-wBK" firstAttribute="centerY" secondItem="g1k-J1-BLI" secondAttribute="centerY" id="hcU-Uo-8HD"/>
+                    <constraint firstItem="B0R-H2-wBK" firstAttribute="leading" secondItem="g1k-J1-BLI" secondAttribute="leading" constant="15" id="kVC-Gv-1KU"/>
+                    <constraint firstItem="FXR-P5-gk9" firstAttribute="bottom" secondItem="B0R-H2-wBK" secondAttribute="bottom" constant="-4" id="td1-a1-C19"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageV" destination="B0R-H2-wBK" id="Yhd-en-jfB"/>
+                <outlet property="name" destination="MbB-l7-8ZD" id="Pwq-IK-dyU"/>
+                <outlet property="numberOfRoomer" destination="nKo-7x-0sn" id="RZP-Oj-lx8"/>
+            </connections>
+            <point key="canvasLocation" x="24" y="177.21139430284859"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="roomer" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C7182BA04185023F2DBCF73 /* Pods_QuanTro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16553E82AB14EF080A4C9810 /* Pods_QuanTro.framework */; };
+		EA00CA5721D9AC76000124F8 /* RoomerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA00CA5621D9AC76000124F8 /* RoomerCell.xib */; };
+		EA00CA5921D9AE17000124F8 /* RoomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA00CA5821D9AE17000124F8 /* RoomerCell.swift */; };
+		EA00CA5B21D9AEC5000124F8 /* ListRoomerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA00CA5A21D9AEC5000124F8 /* ListRoomerController.swift */; };
+		EA00CA5D21DA5BB6000124F8 /* CreateRoomerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA00CA5C21DA5BB6000124F8 /* CreateRoomerController.swift */; };
+		EA00CA5F21DB6C0E000124F8 /* ContractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA00CA5E21DB6C0E000124F8 /* ContractController.swift */; };
+		EA00CA6121DBAA43000124F8 /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA00CA6021DBAA43000124F8 /* VehicleCell.swift */; };
+		EA00CA6321DBAAE8000124F8 /* ListVehicleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA00CA6221DBAAE8000124F8 /* ListVehicleController.swift */; };
+		EA00CA6521DBAD95000124F8 /* CreateVehicleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA00CA6421DBAD95000124F8 /* CreateVehicleController.swift */; };
+		EA115FB221BAA1FB001BC434 /* BillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA115FB121BAA1FB001BC434 /* BillCell.xib */; };
+		EA115FB421BAA7ED001BC434 /* BillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA115FB321BAA7ED001BC434 /* BillCell.swift */; };
+		EA1ABD3C21C4F31700199442 /* WriteIndexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1ABD3B21C4F31700199442 /* WriteIndexCell.xib */; };
+		EA1ABD3E21C4F65F00199442 /* WriteIndexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1ABD3D21C4F65F00199442 /* WriteIndexCell.swift */; };
+		EA1ABD4321C6410400199442 /* PopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1ABD4221C6410400199442 /* PopupController.swift */; };
+		EA2679BE21DCFCF4001F0ECF /* VehicleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2679BD21DCFCF4001F0ECF /* VehicleCell.xib */; };
+		EA34CE9521C25AA900D79F26 /* WriteIndexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34CE9421C25AA900D79F26 /* WriteIndexController.swift */; };
+		EAA444EE21B2338B008AE807 /* CreateRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA444ED21B2338B008AE807 /* CreateRoomController.swift */; };
+		EAA4450221B4E170008AE807 /* CreateContractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4450121B4E170008AE807 /* CreateContractController.swift */; };
+		EAA4450421B4ECBD008AE807 /* ListRoomAvailableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4450321B4ECBD008AE807 /* ListRoomAvailableController.swift */; };
+		EAA4450621B4F4D1008AE807 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA4450521B4F4D1008AE807 /* RoomCell.xib */; };
+		EAA4450A21B6761E008AE807 /* ServicePricesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4450921B6761E008AE807 /* ServicePricesController.swift */; };
+		EAA8927821B1590A005761BB /* ListRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8927721B1590A005761BB /* ListRoomController.swift */; };
+		EAA8927A21B15928005761BB /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8927921B15928005761BB /* RoomCell.swift */; };
+		EAAB960421BA4D21005F30ED /* CollectingRentalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAB960321BA4D21005F30ED /* CollectingRentalController.swift */; };
+		EAD5632921AC4CC400ACC2DE /* ListOfMotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5632821AC4CC400ACC2DE /* ListOfMotel.swift */; };
+		EAD5632D21AFF9A100ACC2DE /* MotelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5632C21AFF9A100ACC2DE /* MotelController.swift */; };
+		EAE0C63421D46D230085E5FD /* CollectingFeeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE0C63321D46D230085E5FD /* CollectingFeeController.swift */; };
+		EAE0C63721D4EE250085E5FD /* HistoryIndexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE0C63621D4EE250085E5FD /* HistoryIndexCell.swift */; };
+		EAE0C63921D4EEFB0085E5FD /* HistoryIndexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE0C63821D4EEFB0085E5FD /* HistoryIndexController.swift */; };
+		EAE0C63B21D50E420085E5FD /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE0C63A21D50E420085E5FD /* SearchController.swift */; };
+		EAE0C63D21D511600085E5FD /* RoomerCellForSearching.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE0C63C21D511600085E5FD /* RoomerCellForSearching.xib */; };
+		EAE0C63F21D5148B0085E5FD /* RoomerCellForSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE0C63E21D5148B0085E5FD /* RoomerCellForSearching.swift */; };
+		EAE6DF2721A8F614000749CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6DF2621A8F614000749CD /* AppDelegate.swift */; };
+		EAE6DF2921A8F614000749CD /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6DF2821A8F614000749CD /* LoginController.swift */; };
+		EAE6DF2C21A8F614000749CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE6DF2A21A8F614000749CD /* Main.storyboard */; };
+		EAE6DF2F21A8F614000749CD /* QuanTro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAE6DF2D21A8F614000749CD /* QuanTro.xcdatamodeld */; };
+		EAE6DF3121A8F617000749CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE6DF3021A8F617000749CD /* Assets.xcassets */; };
+		EAE6DF3421A8F617000749CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE6DF3221A8F617000749CD /* LaunchScreen.storyboard */; };
+		EAE6DF3C21A8F810000749CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAE6DF3B21A8F810000749CD /* GoogleService-Info.plist */; };
+		EAE6DF3E21A92682000749CD /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6DF3D21A92682000749CD /* RegisterController.swift */; };
+		EAE6DF4021A9A009000749CD /* ListMotelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6DF3F21A9A009000749CD /* ListMotelController.swift */; };
+		EAE6DF4321A9A043000749CD /* Modle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6DF4221A9A043000749CD /* Modle.swift */; };
+		EAE6DF4621AABE63000749CD /* MotelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6DF4521AABE63000749CD /* MotelCell.swift */; };
+		EAE6DF4821AAD4A7000749CD /* CreateMotelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6DF4721AAD4A7000749CD /* CreateMotelController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16553E82AB14EF080A4C9810 /* Pods_QuanTro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuanTro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EDA828664F4C54EE97C79B /* Pods-QuanTro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuanTro.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuanTro/Pods-QuanTro.release.xcconfig"; sourceTree = "<group>"; };
+		DC97624E77661D836E7EBB97 /* Pods-QuanTro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuanTro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuanTro/Pods-QuanTro.debug.xcconfig"; sourceTree = "<group>"; };
+		EA00CA5621D9AC76000124F8 /* RoomerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomerCell.xib; sourceTree = "<group>"; };
+		EA00CA5821D9AE17000124F8 /* RoomerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomerCell.swift; sourceTree = "<group>"; };
+		EA00CA5A21D9AEC5000124F8 /* ListRoomerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRoomerController.swift; sourceTree = "<group>"; };
+		EA00CA5C21DA5BB6000124F8 /* CreateRoomerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomerController.swift; sourceTree = "<group>"; };
+		EA00CA5E21DB6C0E000124F8 /* ContractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractController.swift; sourceTree = "<group>"; };
+		EA00CA6021DBAA43000124F8 /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
+		EA00CA6221DBAAE8000124F8 /* ListVehicleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVehicleController.swift; sourceTree = "<group>"; };
+		EA00CA6421DBAD95000124F8 /* CreateVehicleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicleController.swift; sourceTree = "<group>"; };
+		EA115FB121BAA1FB001BC434 /* BillCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillCell.xib; sourceTree = "<group>"; };
+		EA115FB321BAA7ED001BC434 /* BillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCell.swift; sourceTree = "<group>"; };
+		EA1ABD3B21C4F31700199442 /* WriteIndexCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WriteIndexCell.xib; sourceTree = "<group>"; };
+		EA1ABD3D21C4F65F00199442 /* WriteIndexCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteIndexCell.swift; sourceTree = "<group>"; };
+		EA1ABD4221C6410400199442 /* PopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupController.swift; sourceTree = "<group>"; };
+		EA2679BD21DCFCF4001F0ECF /* VehicleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleCell.xib; sourceTree = "<group>"; };
+		EA34CE9421C25AA900D79F26 /* WriteIndexController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteIndexController.swift; sourceTree = "<group>"; };
+		EAA444ED21B2338B008AE807 /* CreateRoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomController.swift; sourceTree = "<group>"; };
+		EAA4450121B4E170008AE807 /* CreateContractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractController.swift; sourceTree = "<group>"; };
+		EAA4450321B4ECBD008AE807 /* ListRoomAvailableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRoomAvailableController.swift; sourceTree = "<group>"; };
+		EAA4450521B4F4D1008AE807 /* RoomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
+		EAA4450921B6761E008AE807 /* ServicePricesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePricesController.swift; sourceTree = "<group>"; };
+		EAA4450B21B6C20A008AE807 /* QuanTro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuanTro.entitlements; sourceTree = "<group>"; };
+		EAA8927721B1590A005761BB /* ListRoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRoomController.swift; sourceTree = "<group>"; };
+		EAA8927921B15928005761BB /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		EAAB960321BA4D21005F30ED /* CollectingRentalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectingRentalController.swift; sourceTree = "<group>"; };
+		EAD5632821AC4CC400ACC2DE /* ListOfMotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMotel.swift; sourceTree = "<group>"; };
+		EAD5632C21AFF9A100ACC2DE /* MotelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotelController.swift; sourceTree = "<group>"; };
+		EAE0C63321D46D230085E5FD /* CollectingFeeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectingFeeController.swift; sourceTree = "<group>"; };
+		EAE0C63621D4EE250085E5FD /* HistoryIndexCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryIndexCell.swift; sourceTree = "<group>"; };
+		EAE0C63821D4EEFB0085E5FD /* HistoryIndexController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryIndexController.swift; sourceTree = "<group>"; };
+		EAE0C63A21D50E420085E5FD /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		EAE0C63C21D511600085E5FD /* RoomerCellForSearching.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomerCellForSearching.xib; sourceTree = "<group>"; };
+		EAE0C63E21D5148B0085E5FD /* RoomerCellForSearching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomerCellForSearching.swift; sourceTree = "<group>"; };
+		EAE6DF2321A8F614000749CD /* QuanTro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuanTro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE6DF2621A8F614000749CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAE6DF2821A8F614000749CD /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		EAE6DF2B21A8F614000749CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAE6DF2E21A8F614000749CD /* QuanTro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuanTro.xcdatamodel; sourceTree = "<group>"; };
+		EAE6DF3021A8F617000749CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAE6DF3321A8F617000749CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAE6DF3521A8F617000749CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE6DF3B21A8F810000749CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EAE6DF3D21A92682000749CD /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		EAE6DF3F21A9A009000749CD /* ListMotelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMotelController.swift; sourceTree = "<group>"; };
+		EAE6DF4221A9A043000749CD /* Modle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modle.swift; sourceTree = "<group>"; };
+		EAE6DF4521AABE63000749CD /* MotelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotelCell.swift; sourceTree = "<group>"; };
+		EAE6DF4721AAD4A7000749CD /* CreateMotelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMotelController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAE6DF2021A8F614000749CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C7182BA04185023F2DBCF73 /* Pods_QuanTro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D878D432B496802327588A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16553E82AB14EF080A4C9810 /* Pods_QuanTro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F6CDF85E04411B26F43CC74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC97624E77661D836E7EBB97 /* Pods-QuanTro.debug.xcconfig */,
+				84EDA828664F4C54EE97C79B /* Pods-QuanTro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA1ABD4121C640A000199442 /* NibFile */ = {
+			isa = PBXGroup;
+			children = (
+				EAA4450521B4F4D1008AE807 /* RoomCell.xib */,
+				EA115FB121BAA1FB001BC434 /* BillCell.xib */,
+				EA1ABD3B21C4F31700199442 /* WriteIndexCell.xib */,
+				EAE0C63C21D511600085E5FD /* RoomerCellForSearching.xib */,
+				EA00CA5621D9AC76000124F8 /* RoomerCell.xib */,
+				EA2679BD21DCFCF4001F0ECF /* VehicleCell.xib */,
+			);
+			path = NibFile;
+			sourceTree = "<group>";
+		};
+		EAD5632721AC4CA900ACC2DE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5632821AC4CC400ACC2DE /* ListOfMotel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EAE0C63521D4ED420085E5FD /* CellController */ = {
+			isa = PBXGroup;
+			children = (
+				EAA8927921B15928005761BB /* RoomCell.swift */,
+				EA115FB321BAA7ED001BC434 /* BillCell.swift */,
+				EA1ABD3D21C4F65F00199442 /* WriteIndexCell.swift */,
+				EAE6DF4521AABE63000749CD /* MotelCell.swift */,
+				EAE0C63621D4EE250085E5FD /* HistoryIndexCell.swift */,
+				EAE0C63E21D5148B0085E5FD /* RoomerCellForSearching.swift */,
+				EA00CA5821D9AE17000124F8 /* RoomerCell.swift */,
+				EA00CA6021DBAA43000124F8 /* VehicleCell.swift */,
+			);
+			path = CellController;
+			sourceTree = "<group>";
+		};
+		EAE6DF1A21A8F614000749CD = {
+			isa = PBXGroup;
+			children = (
+				EAE6DF4121A9A02C000749CD /* Modle */,
+				EAE6DF2521A8F614000749CD /* QuanTro */,
+				EAE6DF2421A8F614000749CD /* Products */,
+				3F6CDF85E04411B26F43CC74 /* Pods */,
+				01D878D432B496802327588A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EAE6DF2421A8F614000749CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAE6DF2321A8F614000749CD /* QuanTro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAE6DF2521A8F614000749CD /* QuanTro */ = {
+			isa = PBXGroup;
+			children = (
+				EAE0C63521D4ED420085E5FD /* CellController */,
+				EAA4450B21B6C20A008AE807 /* QuanTro.entitlements */,
+				EAD5632721AC4CA900ACC2DE /* Data */,
+				EA1ABD4121C640A000199442 /* NibFile */,
+				EAE6DF4421AABBBD000749CD /* Controller */,
+				EAE6DF2621A8F614000749CD /* AppDelegate.swift */,
+				EAE6DF2A21A8F614000749CD /* Main.storyboard */,
+				EAE6DF3021A8F617000749CD /* Assets.xcassets */,
+				EAE6DF3221A8F617000749CD /* LaunchScreen.storyboard */,
+				EAE6DF3521A8F617000749CD /* Info.plist */,
+				EAE6DF2D21A8F614000749CD /* QuanTro.xcdatamodeld */,
+				EAE6DF3B21A8F810000749CD /* GoogleService-Info.plist */,
+			);
+			path = QuanTro;
+			sourceTree = "<group>";
+		};
+		EAE6DF4121A9A02C000749CD /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+				EAE6DF4221A9A043000749CD /* Modle.swift */,
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		EAE6DF4421AABBBD000749CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAE6DF3D21A92682000749CD /* RegisterController.swift */,
+				EAE6DF3F21A9A009000749CD /* ListMotelController.swift */,
+				EAE6DF2821A8F614000749CD /* LoginController.swift */,
+				EAE6DF4721AAD4A7000749CD /* CreateMotelController.swift */,
+				EAD5632C21AFF9A100ACC2DE /* MotelController.swift */,
+				EAA8927721B1590A005761BB /* ListRoomController.swift */,
+				EAA444ED21B2338B008AE807 /* CreateRoomController.swift */,
+				EAA4450121B4E170008AE807 /* CreateContractController.swift */,
+				EAA4450321B4ECBD008AE807 /* ListRoomAvailableController.swift */,
+				EAA4450921B6761E008AE807 /* ServicePricesController.swift */,
+				EAAB960321BA4D21005F30ED /* CollectingRentalController.swift */,
+				EA34CE9421C25AA900D79F26 /* WriteIndexController.swift */,
+				EA1ABD4221C6410400199442 /* PopupController.swift */,
+				EAE0C63321D46D230085E5FD /* CollectingFeeController.swift */,
+				EAE0C63821D4EEFB0085E5FD /* HistoryIndexController.swift */,
+				EAE0C63A21D50E420085E5FD /* SearchController.swift */,
+				EA00CA5A21D9AEC5000124F8 /* ListRoomerController.swift */,
+				EA00CA5C21DA5BB6000124F8 /* CreateRoomerController.swift */,
+				EA00CA5E21DB6C0E000124F8 /* ContractController.swift */,
+				EA00CA6221DBAAE8000124F8 /* ListVehicleController.swift */,
+				EA00CA6421DBAD95000124F8 /* CreateVehicleController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAE6DF2221A8F614000749CD /* QuanTro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE6DF3821A8F617000749CD /* Build configuration list for PBXNativeTarget "QuanTro" */;
+			buildPhases = (
+				32E18F08763D560C57A5F8C0 /* [CP] Check Pods Manifest.lock */,
+				EAE6DF1F21A8F614000749CD /* Sources */,
+				EAE6DF2021A8F614000749CD /* Frameworks */,
+				EAE6DF2121A8F614000749CD /* Resources */,
+				D2E19728980DB93B6C71603F /* [CP] Embed Pods Frameworks */,
+				12EFC51EB135A56103C03532 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuanTro;
+			productName = QuanTro;
+			productReference = EAE6DF2321A8F614000749CD /* QuanTro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAE6DF1B21A8F614000749CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Le Nguyen Quoc Cuong";
+				TargetAttributes = {
+					EAE6DF2221A8F614000749CD = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EAE6DF1E21A8F614000749CD /* Build configuration list for PBXProject "QuanTro" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAE6DF1A21A8F614000749CD;
+			productRefGroup = EAE6DF2421A8F614000749CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAE6DF2221A8F614000749CD /* QuanTro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAE6DF2121A8F614000749CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE6DF3421A8F617000749CD /* LaunchScreen.storyboard in Resources */,
+				EA1ABD3C21C4F31700199442 /* WriteIndexCell.xib in Resources */,
+				EAE6DF3C21A8F810000749CD /* GoogleService-Info.plist in Resources */,
+				EA00CA5721D9AC76000124F8 /* RoomerCell.xib in Resources */,
+				EAE0C63D21D511600085E5FD /* RoomerCellForSearching.xib in Resources */,
+				EA115FB221BAA1FB001BC434 /* BillCell.xib in Resources */,
+				EA2679BE21DCFCF4001F0ECF /* VehicleCell.xib in Resources */,
+				EAA4450621B4F4D1008AE807 /* RoomCell.xib in Resources */,
+				EAE6DF3121A8F617000749CD /* Assets.xcassets in Resources */,
+				EAE6DF2C21A8F614000749CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12EFC51EB135A56103C03532 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuanTro/Pods-QuanTro-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuanTro/Pods-QuanTro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32E18F08763D560C57A5F8C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuanTro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2E19728980DB93B6C71603F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuanTro/Pods-QuanTro-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuanTro/Pods-QuanTro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAE6DF1F21A8F614000749CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA444EE21B2338B008AE807 /* CreateRoomController.swift in Sources */,
+				EA00CA5F21DB6C0E000124F8 /* ContractController.swift in Sources */,
+				EAE0C63B21D50E420085E5FD /* SearchController.swift in Sources */,
+				EAD5632D21AFF9A100ACC2DE /* MotelController.swift in Sources */,
+				EA00CA5921D9AE17000124F8 /* RoomerCell.swift in Sources */,
+				EAA8927A21B15928005761BB /* RoomCell.swift in Sources */,
+				EAA4450A21B6761E008AE807 /* ServicePricesController.swift in Sources */,
+				EAE6DF3E21A92682000749CD /* RegisterController.swift in Sources */,
+				EA00CA6521DBAD95000124F8 /* CreateVehicleController.swift in Sources */,
+				EAE6DF2921A8F614000749CD /* LoginController.swift in Sources */,
+				EAE0C63721D4EE250085E5FD /* HistoryIndexCell.swift in Sources */,
+				EA115FB421BAA7ED001BC434 /* BillCell.swift in Sources */,
+				EAE6DF4021A9A009000749CD /* ListMotelController.swift in Sources */,
+				EAA4450221B4E170008AE807 /* CreateContractController.swift in Sources */,
+				EA00CA6121DBAA43000124F8 /* VehicleCell.swift in Sources */,
+				EAE0C63F21D5148B0085E5FD /* RoomerCellForSearching.swift in Sources */,
+				EAE6DF4321A9A043000749CD /* Modle.swift in Sources */,
+				EA1ABD3E21C4F65F00199442 /* WriteIndexCell.swift in Sources */,
+				EAE6DF4621AABE63000749CD /* MotelCell.swift in Sources */,
+				EAE0C63921D4EEFB0085E5FD /* HistoryIndexController.swift in Sources */,
+				EA00CA5D21DA5BB6000124F8 /* CreateRoomerController.swift in Sources */,
+				EA00CA5B21D9AEC5000124F8 /* ListRoomerController.swift in Sources */,
+				EAAB960421BA4D21005F30ED /* CollectingRentalController.swift in Sources */,
+				EA00CA6321DBAAE8000124F8 /* ListVehicleController.swift in Sources */,
+				EAE6DF2F21A8F614000749CD /* QuanTro.xcdatamodeld in Sources */,
+				EA34CE9521C25AA900D79F26 /* WriteIndexController.swift in Sources */,
+				EAA8927821B1590A005761BB /* ListRoomController.swift in Sources */,
+				EAE0C63421D46D230085E5FD /* CollectingFeeController.swift in Sources */,
+				EA1ABD4321C6410400199442 /* PopupController.swift in Sources */,
+				EAE6DF2721A8F614000749CD /* AppDelegate.swift in Sources */,
+				EAD5632921AC4CC400ACC2DE /* ListOfMotel.swift in Sources */,
+				EAA4450421B4ECBD008AE807 /* ListRoomAvailableController.swift in Sources */,
+				EAE6DF4821AAD4A7000749CD /* CreateMotelController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EAE6DF2A21A8F614000749CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAE6DF2B21A8F614000749CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAE6DF3221A8F617000749CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAE6DF3321A8F617000749CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAE6DF3621A8F617000749CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAE6DF3721A8F617000749CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAE6DF3921A8F617000749CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC97624E77661D836E7EBB97 /* Pods-QuanTro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuanTro/QuanTro.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 528RRV2LY8;
+				INFOPLIST_FILE = QuanTro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LeNguyenQuocCuong.QuanTro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAE6DF3A21A8F617000749CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84EDA828664F4C54EE97C79B /* Pods-QuanTro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuanTro/QuanTro.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 528RRV2LY8;
+				INFOPLIST_FILE = QuanTro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LeNguyenQuocCuong.QuanTro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAE6DF1E21A8F614000749CD /* Build configuration list for PBXProject "QuanTro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE6DF3621A8F617000749CD /* Debug */,
+				EAE6DF3721A8F617000749CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE6DF3821A8F617000749CD /* Build configuration list for PBXNativeTarget "QuanTro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE6DF3921A8F617000749CD /* Debug */,
+				EAE6DF3A21A8F617000749CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EAE6DF2D21A8F614000749CD /* QuanTro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EAE6DF2E21A8F614000749CD /* QuanTro.xcdatamodel */,
+			);
+			currentVersion = EAE6DF2E21A8F614000749CD /* QuanTro.xcdatamodel */;
+			path = QuanTro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EAE6DF1B21A8F614000749CD /* Project object */;
+}

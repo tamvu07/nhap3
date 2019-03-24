@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="WriteIndexCell" rowHeight="80" id="1Fa-vD-cAb" customClass="WriteIndexCell" customModule="QuanTro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Fa-vD-cAb" id="a7c-5c-zUo">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgK-Yf-TPM">
+                        <rect key="frame" x="18" y="29.5" width="70" height="30"/>
+                        <color key="backgroundColor" red="0.0" green="0.52825704910000004" blue="0.95494434930000005" alpha="0.74716395550000003" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="ecR-OC-rBz"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Lịch sử"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcp-fF-Re2">
+                        <rect key="frame" x="318" y="29.5" width="70" height="30"/>
+                        <color key="backgroundColor" red="0.56862745100000001" green="0.87058823529999996" blue="0.53333333329999999" alpha="0.74167915240000004" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="tintColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Ghi"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên phòng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6c-Xd-IzX">
+                        <rect key="frame" x="162" y="11" width="82" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="b6c-Xd-IzX" firstAttribute="top" secondItem="a7c-5c-zUo" secondAttribute="topMargin" id="MKl-qX-Mju"/>
+                    <constraint firstAttribute="bottom" secondItem="lcp-fF-Re2" secondAttribute="bottom" constant="20" id="OXW-32-RCc"/>
+                    <constraint firstItem="kgK-Yf-TPM" firstAttribute="leading" secondItem="a7c-5c-zUo" secondAttribute="leading" constant="18" id="RuI-ir-cPj"/>
+                    <constraint firstItem="lcp-fF-Re2" firstAttribute="width" secondItem="kgK-Yf-TPM" secondAttribute="width" id="cGn-y7-ZT4"/>
+                    <constraint firstItem="b6c-Xd-IzX" firstAttribute="centerX" secondItem="a7c-5c-zUo" secondAttribute="centerX" id="fK9-gr-HVX"/>
+                    <constraint firstAttribute="trailing" secondItem="lcp-fF-Re2" secondAttribute="trailing" constant="18" id="fgq-RF-gLO"/>
+                    <constraint firstAttribute="bottom" secondItem="kgK-Yf-TPM" secondAttribute="bottom" constant="20" id="qBm-Iq-A7G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="WriteButton" destination="lcp-fF-Re2" id="whN-y1-H1h"/>
+                <outlet property="historyButton" destination="kgK-Yf-TPM" id="ZUk-Pf-Iss"/>
+                <outlet property="roomName" destination="b6c-Xd-IzX" id="Rk3-LY-4YC"/>
+            </connections>
+            <point key="canvasLocation" x="110.40000000000001" y="139.43028485757122"/>
+        </tableViewCell>
+    </objects>
+</document>

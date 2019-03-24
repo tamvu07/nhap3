@@ -43,6 +43,9 @@
                                 <rect key="frame" x="46" y="292" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="dang ky"/>
+                                <connections>
+                                    <action selector="bt_dangky:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zbg-mv-etM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zoj-SE-lMJ">
                                 <rect key="frame" x="240" y="292" width="73" height="30"/>
@@ -79,10 +82,24 @@
                                     <outletCollection property="gestureRecognizers" destination="dCs-Ls-0dE" appends="YES" id="IYH-AE-tUk"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HX-O8-OWm">
+                                <rect key="frame" x="174" y="252" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="avatar"/>
+                                <connections>
+                                    <action selector="bt_avatar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="veo-73-oh0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="Avatar_img" destination="kHE-QI-2oP" id="qIl-HF-rUV"/>
+                        <outlet property="txt_email" destination="mrM-Ap-vnx" id="uJx-cV-OQA"/>
+                        <outlet property="txt_pass" destination="JGw-dg-chz" id="zRa-PQ-SZw"/>
+                        <outlet property="txt_ten" destination="euO-O4-deB" id="aH2-ow-n8w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="dCs-Ls-0dE">
