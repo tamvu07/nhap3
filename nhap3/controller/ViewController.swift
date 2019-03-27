@@ -4,10 +4,24 @@
 //
 //  Created by vuminhtam on 3/21/19.
 //  Copyright © 2019 vuminhtam. All rights reserved.
-// TTT
-ßßß
+// khi up tam hinh len thi phai import storage
+
+
 import UIKit
 import Firebase
+import FirebaseAuth
+import FirebaseStorage
+
+
+
+let storage = Storage.storage()
+let storageRef = storage.reference(forURL: "gs://nhap3a.appspot.com")
+// Create a storage reference from our storage service "gs://nhap3a.appspot.com"
+
+
+
+
+
 
 class ViewController: UIViewController,UIImagePickerControllerDelegate,	UINavigationControllerDelegate {
 
@@ -19,17 +33,52 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,	UINaviga
     @IBOutlet weak var Avatar_img: UIImageView!
     
     @IBAction func bt_dangky(_ sender: Any) {
+        
+        let email:String = txt_email.text!
+        let pass:String = txt_pass.text!
         // tao tai khoan
-        Auth.auth().createUser(withEmail: txt_email.text!, password: txt_pass.text!) { authResult, error in
+        Auth.auth().createUser(withEmail: email, password: pass) { authResult, error in
             if(error == nil)
             {
-                // cah de luu ten va tam hinh len firebase
-                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
-                changeRequest?.displayName = ""
-                changeRequest?.photoURL = NSURL(fileURLWithPath: "") as URL
-                changeRequest?.commitChanges { (error) in
-                    // ...
+                // dang ky xong ma ko co loi thi cho dang nhap luon
+                Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
+                    if(error == nil)
+                    {
+                        print("dang nhap thanh cong")
+                    }
+                    
                 }
+                // dua avatar len database khi dang ky
+                let Avatar_Ref = storageRef.child("images/\(email).jpg")
+                // Upload the file to the path "images/rivers.jpg"
+                let uploadTask = Avatar_Ref.putData(self.imgdata, metadata: nil) { (metadata, error) in
+                    guard let metadata = metadata else {
+                        print("loi up load lan 1")
+                        return
+                    }
+                    // Metadata contains file metadata such as size, content-type.
+                    let size = metadata.size
+                    // You can also access to download URL after upload.
+                    Avatar_Ref.downloadURL { (url, error) in
+                        guard let downloadURL = url else {
+                            print("loi up load lan 2")
+                            return
+                        }
+                        // cah de luu ten va tam hinh len firebase
+                        let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                        changeRequest?.displayName = self.txt_ten.text!
+                        changeRequest?.photoURL = downloadURL
+                        changeRequest?.commitChanges { (error) in
+                            if let error = error{
+                                print("loi upload profile")
+                            }else{
+                                print("dang ky thanh cong ...... chuyen trang ! ")
+                            }
+                        }
+                    }
+                }
+                // de up load file len phai chay lenh uploadTask.resume()
+                uploadTask.resume()
             }
             else
             {
@@ -47,7 +96,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,	UINaviga
             let ImgPicker = UIImagePickerController()
             ImgPicker.sourceType = UIImagePickerController.SourceType.photoLibrary
             ImgPicker.delegate = self
-            // khon cho thay doi anh
+            // khong cho thay doi anh
             ImgPicker.allowsEditing = false
             // nho man hinh chinh truy cap den no
             self.present(ImgPicker, animated: true, completion: nil)
@@ -114,10 +163,22 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,	UINaviga
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // khi moi vao co anh tu may luon
+        imgdata = UIImage(named: "camera")!.pngData()
     }
 
+    @IBAction func bt_dangnhap(_ sender: Any) {
+        // chuyen man hinh dang nhap
+        let SCR = storyboard?.instantiateViewController(withIdentifier: "MH_dangnhap") as! manhinh_dangnhap_ViewController
+        // chuyen man hinh khong co nut tro ve
+       present(SCR, animated: true, completion: nil);
+        // chuyen man hinh co nut tro ve
+//        navigationController?.pushViewController(SCR, animated: true)
+    }
+    
+    
 
+    
 }
 
 

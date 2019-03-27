@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A651AF224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A651AE224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift */; };
 		A30D1ACFF2B2968C9E8162E4 /* Pods_nhap3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2232827125C34E78FF0D0EDA /* Pods_nhap3.framework */; };
 		B5F2979622438F1F00156002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2979522438F1F00156002 /* AppDelegate.swift */; };
 		B5F2979822438F1F00156002 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2979722438F1F00156002 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		16D0AAAD9A2B7D0C212E22C3 /* Pods-nhap3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nhap3.release.xcconfig"; path = "Target Support Files/Pods-nhap3/Pods-nhap3.release.xcconfig"; sourceTree = "<group>"; };
+		18A651AE224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manhinh_dangnhap_ViewController.swift; sourceTree = "<group>"; };
 		2232827125C34E78FF0D0EDA /* Pods_nhap3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nhap3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DDA0803C88A31315C9E9983 /* Pods-nhap3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nhap3.debug.xcconfig"; path = "Target Support Files/Pods-nhap3/Pods-nhap3.debug.xcconfig"; sourceTree = "<group>"; };
 		B5F2979222438F1F00156002 /* nhap3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nhap3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +52,6 @@
 				5DDA0803C88A31315C9E9983 /* Pods-nhap3.debug.xcconfig */,
 				16D0AAAD9A2B7D0C212E22C3 /* Pods-nhap3.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F2979922438F1F00156002 /* Main.storyboard */,
+				18A651AE224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -165,7 +167,7 @@
 				};
 			};
 			buildConfigurationList = B5F2978D22438F1F00156002 /* Build configuration list for PBXProject "nhap3" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -254,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F2979822438F1F00156002 /* ViewController.swift in Sources */,
+				18A651AF224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift in Sources */,
 				B5F2979622438F1F00156002 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
