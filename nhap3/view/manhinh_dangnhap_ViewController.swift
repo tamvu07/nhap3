@@ -46,7 +46,8 @@ class manhinh_dangnhap_ViewController: UIViewController {
             {
                 activity.stopAnimating()
                 alertActivity.dismiss(animated: true, completion: nil)
-                print("dang nhap thanh cong !")
+                self!.gotoscreen()
+                //print("dang nhap thanh cong !")
             }
             else
             {
@@ -64,9 +65,10 @@ class manhinh_dangnhap_ViewController: UIViewController {
     func isLogin()
     {
         Auth.auth().addStateDidChangeListener { (auth, user) in
-            if(user == user)
+            if user != nil
             {
-                print(user?.email)
+                // da dang nhap
+                self.gotoscreen()
             }
             else
             {
@@ -83,16 +85,24 @@ class manhinh_dangnhap_ViewController: UIViewController {
             print ("Error signing out: %@", signOutError)
         }
         
+        
     }
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
+extension UIViewController
+{
+    func gotoscreen()
+    {
+        let screen = self.storyboard?.instantiateViewController(withIdentifier: "isLogin")
+        if(screen != nil)
+        {
+            self.present(screen!, animated: true, completion: nil)
+        }
+        else
+        {
+            print("Loi chuyen man hinh")
+        }
     }
-    */
-
 }

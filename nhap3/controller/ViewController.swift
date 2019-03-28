@@ -72,7 +72,8 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,	UINaviga
                             if let error = error{
                                 print("loi upload profile")
                             }else{
-                                print("dang ky thanh cong ...... chuyen trang ! ")
+//                                print("dang ky thanh cong ...... chuyen trang ! ")
+                                self.gotoscreen()
                             }
                         }
                     }
