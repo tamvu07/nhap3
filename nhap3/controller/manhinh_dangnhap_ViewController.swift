@@ -19,7 +19,7 @@ class manhinh_dangnhap_ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        isLogOut()
+        //isLogOut()
         isLogin()
 
     }

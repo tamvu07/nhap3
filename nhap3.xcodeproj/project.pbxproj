@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18960C3C224D29B8001F6DB1 /* Screen_List_Chat_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18960C3B224D29B8001F6DB1 /* Screen_List_Chat_ViewController.swift */; };
+		18960C3F224D2B48001F6DB1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18960C3E224D2B48001F6DB1 /* User.swift */; };
 		18A651AF224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A651AE224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift */; };
 		A30D1ACFF2B2968C9E8162E4 /* Pods_nhap3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2232827125C34E78FF0D0EDA /* Pods_nhap3.framework */; };
 		B5F2979622438F1F00156002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2979522438F1F00156002 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		16D0AAAD9A2B7D0C212E22C3 /* Pods-nhap3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nhap3.release.xcconfig"; path = "Target Support Files/Pods-nhap3/Pods-nhap3.release.xcconfig"; sourceTree = "<group>"; };
+		18960C3B224D29B8001F6DB1 /* Screen_List_Chat_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Screen_List_Chat_ViewController.swift; path = /Users/apple/Desktop/nhap3/nhap3/controller/Screen_List_Chat_ViewController.swift; sourceTree = "<absolute>"; };
+		18960C3E224D2B48001F6DB1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		18A651AE224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manhinh_dangnhap_ViewController.swift; sourceTree = "<group>"; };
 		2232827125C34E78FF0D0EDA /* Pods_nhap3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nhap3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DDA0803C88A31315C9E9983 /* Pods-nhap3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nhap3.debug.xcconfig"; path = "Target Support Files/Pods-nhap3/Pods-nhap3.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18960C3D224D2AC4001F6DB1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				18960C3E224D2B48001F6DB1 /* User.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		322E3D6431E51DAF8844B551 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +89,7 @@
 		B5F2979422438F1F00156002 /* nhap3 */ = {
 			isa = PBXGroup;
 			children = (
-				B5F297AA2243989500156002 /* model */,
+				18960C3D224D2AC4001F6DB1 /* model */,
 				B5F297A92243988A00156002 /* controller */,
 				B5F297A82243988000156002 /* view */,
 				B5F297A72243987700156002 /* support */,
@@ -101,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				B5F2979922438F1F00156002 /* Main.storyboard */,
-				18A651AE224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -109,16 +120,11 @@
 		B5F297A92243988A00156002 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				18960C3B224D29B8001F6DB1 /* Screen_List_Chat_ViewController.swift */,
+				18A651AE224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift */,
 				B5F2979722438F1F00156002 /* ViewController.swift */,
 			);
 			path = controller;
-			sourceTree = "<group>";
-		};
-		B5F297AA2243989500156002 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
 			sourceTree = "<group>";
 		};
 		B7BAE25DE079559D4AFA0105 /* Frameworks */ = {
@@ -211,6 +217,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-nhap3/Pods-nhap3-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -219,6 +226,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18960C3C224D29B8001F6DB1 /* Screen_List_Chat_ViewController.swift in Sources */,
 				B5F2979822438F1F00156002 /* ViewController.swift in Sources */,
 				18A651AF224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift in Sources */,
+				18960C3F224D2B48001F6DB1 /* User.swift in Sources */,
 				B5F2979622438F1F00156002 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
