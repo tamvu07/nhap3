@@ -14,7 +14,7 @@ struct User {
     let email:String!
     let fullName:String!
     let linkAvatar:String!
-    let Avatar:UIImage!
+    var Avatar:UIImage!
     
     init()
     {

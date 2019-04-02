@@ -15,7 +15,12 @@ var currenUser:User!
 
 class Screen_List_Chat_ViewController: UIViewController {
 
-    var listFriend:Array<User> = Array<User>()
+    @IBAction func bt_ListFriend(_ sender: Any) {
+        let scr = storyboard?.instantiateViewController(withIdentifier: "MH_ListFrined") as! Screen_List_Friend_ViewController
+
+        present(scr, animated: true, completion: nil)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,25 +43,9 @@ class Screen_List_Chat_ViewController: UIViewController {
                                                   "linkAvatar":currenUser.linkAvatar
                                                   ]
             // dem du lieu len fire base database
-            print("...xxxxx..<<<<\(currenUser.email)>>>>.................")
+//            print("...xxxxx..<<<<\(currenUser.email)>>>>.................")
             userid.setValue(user)
-            // Listen for new comments in the Firebase database
-            tablename.observe(.childAdded, with: { (snapshot) in
-                // kiem tra xem postDict co du lieu hay ko
-                let postDict = snapshot.value as? [String : AnyObject]
-                if(postDict != nil)
-                {
-                    // day la tra ve cac doi tuong tren database
-                    let email:String = (postDict?["email"])! as! String
-                    let fullName:String = (postDict?["fullname"])! as! String
-                    let linkAvatar:String = (postDict?["linkAvatar"])! as! String
-                    
-                    let user:User = User(id: snapshot.key, email: email, fullname: fullName, linkAvatar: linkAvatar)
-                    // them user vao trong mang
-                    self.listFriend.append(user)
-                    print("=========\(self.listFriend)===========")
-                }
-            })
+            
         }
         else
         {
@@ -76,3 +65,8 @@ class Screen_List_Chat_ViewController: UIViewController {
     */
 
 }
+
+
+
+
+
