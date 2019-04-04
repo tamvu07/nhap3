@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07C024040113D7057AA31DAA /* Pods_nhap3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2D5BFB2BB3289F0A1365EB /* Pods_nhap3.framework */; };
 		18093A8E2251A87A00BFD8B6 /* Screen_List_Friend_CELL_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18093A8D2251A87A00BFD8B6 /* Screen_List_Friend_CELL_TableViewCell.swift */; };
 		18093A942251D93B00BFD8B6 /* Screen_List_Friend_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18093A932251D93B00BFD8B6 /* Screen_List_Friend_ViewController.swift */; };
 		184212582253039500B7F51A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184212572253039500B7F51A /* BaseView.swift */; };
+		186D68122254FEE200648348 /* CELL_List_Chat_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D68112254FEE200648348 /* CELL_List_Chat_TableViewCell.swift */; };
 		18828B8F22523D9400F8DBC8 /* Show_Avatar_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18828B8E22523D9400F8DBC8 /* Show_Avatar_ViewController.swift */; };
 		18828B91225245D600F8DBC8 /* sieunhan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18828B90225245D600F8DBC8 /* sieunhan.swift */; };
 		18960C3C224D29B8001F6DB1 /* Screen_List_Chat_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18960C3B224D29B8001F6DB1 /* Screen_List_Chat_ViewController.swift */; };
 		18960C3F224D2B48001F6DB1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18960C3E224D2B48001F6DB1 /* User.swift */; };
 		18A651AF224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A651AE224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift */; };
-		A30D1ACFF2B2968C9E8162E4 /* Pods_nhap3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2232827125C34E78FF0D0EDA /* Pods_nhap3.framework */; };
+		18C0433522543D90005119B2 /* CELL_chat_user_1_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0433422543D90005119B2 /* CELL_chat_user_1_TableViewCell.swift */; };
+		18C0433722543DDA005119B2 /* CELL_chat_user_2_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0433622543DDA005119B2 /* CELL_chat_user_2_TableViewCell.swift */; };
 		B5F2979622438F1F00156002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2979522438F1F00156002 /* AppDelegate.swift */; };
 		B5F2979822438F1F00156002 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2979722438F1F00156002 /* ViewController.swift */; };
 		B5F2979B22438F1F00156002 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F2979922438F1F00156002 /* Main.storyboard */; };
@@ -26,17 +29,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16D0AAAD9A2B7D0C212E22C3 /* Pods-nhap3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nhap3.release.xcconfig"; path = "Target Support Files/Pods-nhap3/Pods-nhap3.release.xcconfig"; sourceTree = "<group>"; };
 		18093A8D2251A87A00BFD8B6 /* Screen_List_Friend_CELL_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_List_Friend_CELL_TableViewCell.swift; sourceTree = "<group>"; };
 		18093A932251D93B00BFD8B6 /* Screen_List_Friend_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_List_Friend_ViewController.swift; sourceTree = "<group>"; };
 		184212572253039500B7F51A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		186D68112254FEE200648348 /* CELL_List_Chat_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CELL_List_Chat_TableViewCell.swift; sourceTree = "<group>"; };
 		18828B8E22523D9400F8DBC8 /* Show_Avatar_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show_Avatar_ViewController.swift; sourceTree = "<group>"; };
 		18828B90225245D600F8DBC8 /* sieunhan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sieunhan.swift; sourceTree = "<group>"; };
 		18960C3B224D29B8001F6DB1 /* Screen_List_Chat_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Screen_List_Chat_ViewController.swift; path = /Users/apple/Desktop/nhap3/nhap3/controller/Screen_List_Chat_ViewController.swift; sourceTree = "<absolute>"; };
 		18960C3E224D2B48001F6DB1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		18A651AE224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manhinh_dangnhap_ViewController.swift; sourceTree = "<group>"; };
-		2232827125C34E78FF0D0EDA /* Pods_nhap3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nhap3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DDA0803C88A31315C9E9983 /* Pods-nhap3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nhap3.debug.xcconfig"; path = "Target Support Files/Pods-nhap3/Pods-nhap3.debug.xcconfig"; sourceTree = "<group>"; };
+		18C0433422543D90005119B2 /* CELL_chat_user_1_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CELL_chat_user_1_TableViewCell.swift; sourceTree = "<group>"; };
+		18C0433622543DDA005119B2 /* CELL_chat_user_2_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CELL_chat_user_2_TableViewCell.swift; sourceTree = "<group>"; };
+		B4079713CB4E6478602E31A6 /* Pods-nhap3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nhap3.debug.xcconfig"; path = "Target Support Files/Pods-nhap3/Pods-nhap3.debug.xcconfig"; sourceTree = "<group>"; };
 		B5F2979222438F1F00156002 /* nhap3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nhap3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F2979522438F1F00156002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F2979722438F1F00156002 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 		B5F297A122438F2800156002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5F297AB22439BEA00156002 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B5F297AD22439E0700156002 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB2D5BFB2BB3289F0A1365EB /* Pods_nhap3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nhap3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9BBD6B32744503D4D88AB9 /* Pods-nhap3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nhap3.release.xcconfig"; path = "Target Support Files/Pods-nhap3/Pods-nhap3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30D1ACFF2B2968C9E8162E4 /* Pods_nhap3.framework in Frameworks */,
+				07C024040113D7057AA31DAA /* Pods_nhap3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,10 +79,18 @@
 		322E3D6431E51DAF8844B551 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5DDA0803C88A31315C9E9983 /* Pods-nhap3.debug.xcconfig */,
-				16D0AAAD9A2B7D0C212E22C3 /* Pods-nhap3.release.xcconfig */,
+				B4079713CB4E6478602E31A6 /* Pods-nhap3.debug.xcconfig */,
+				EC9BBD6B32744503D4D88AB9 /* Pods-nhap3.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A31B6EECA5A0E3A2D8A64A37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB2D5BFB2BB3289F0A1365EB /* Pods_nhap3.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B5F2978922438F1F00156002 = {
@@ -86,7 +100,7 @@
 				B5F2979422438F1F00156002 /* nhap3 */,
 				B5F2979322438F1F00156002 /* Products */,
 				322E3D6431E51DAF8844B551 /* Pods */,
-				B7BAE25DE079559D4AFA0105 /* Frameworks */,
+				A31B6EECA5A0E3A2D8A64A37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,16 +152,11 @@
 				18093A8D2251A87A00BFD8B6 /* Screen_List_Friend_CELL_TableViewCell.swift */,
 				18093A932251D93B00BFD8B6 /* Screen_List_Friend_ViewController.swift */,
 				18828B8E22523D9400F8DBC8 /* Show_Avatar_ViewController.swift */,
+				18C0433422543D90005119B2 /* CELL_chat_user_1_TableViewCell.swift */,
+				18C0433622543DDA005119B2 /* CELL_chat_user_2_TableViewCell.swift */,
+				186D68112254FEE200648348 /* CELL_List_Chat_TableViewCell.swift */,
 			);
 			path = controller;
-			sourceTree = "<group>";
-		};
-		B7BAE25DE079559D4AFA0105 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2232827125C34E78FF0D0EDA /* Pods_nhap3.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,11 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5F297A422438F2800156002 /* Build configuration list for PBXNativeTarget "nhap3" */;
 			buildPhases = (
-				1C16E47FDD34B5161C60155D /* [CP] Check Pods Manifest.lock */,
+				2712E78AF5EABB1E2852DA4C /* [CP] Check Pods Manifest.lock */,
 				B5F2978E22438F1F00156002 /* Sources */,
 				B5F2978F22438F1F00156002 /* Frameworks */,
 				B5F2979022438F1F00156002 /* Resources */,
-				1A175B429A5B5502A67A787E /* [CP] Embed Pods Frameworks */,
+				5109EBA1BDEECB059D854292 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,7 +230,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1A175B429A5B5502A67A787E /* [CP] Embed Pods Frameworks */ = {
+		2712E78AF5EABB1E2852DA4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nhap3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5109EBA1BDEECB059D854292 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,28 +280,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nhap3/Pods-nhap3-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1C16E47FDD34B5161C60155D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-nhap3-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -281,13 +290,16 @@
 				18828B8F22523D9400F8DBC8 /* Show_Avatar_ViewController.swift in Sources */,
 				18093A8E2251A87A00BFD8B6 /* Screen_List_Friend_CELL_TableViewCell.swift in Sources */,
 				18960C3C224D29B8001F6DB1 /* Screen_List_Chat_ViewController.swift in Sources */,
+				18C0433722543DDA005119B2 /* CELL_chat_user_2_TableViewCell.swift in Sources */,
 				B5F2979822438F1F00156002 /* ViewController.swift in Sources */,
+				186D68122254FEE200648348 /* CELL_List_Chat_TableViewCell.swift in Sources */,
 				18828B91225245D600F8DBC8 /* sieunhan.swift in Sources */,
 				18A651AF224A87F5004DE1AE /* manhinh_dangnhap_ViewController.swift in Sources */,
 				18960C3F224D2B48001F6DB1 /* User.swift in Sources */,
 				184212582253039500B7F51A /* BaseView.swift in Sources */,
 				B5F2979622438F1F00156002 /* AppDelegate.swift in Sources */,
 				18093A942251D93B00BFD8B6 /* Screen_List_Friend_ViewController.swift in Sources */,
+				18C0433522543D90005119B2 /* CELL_chat_user_1_TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,17 +443,18 @@
 		};
 		B5F297A522438F2800156002 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DDA0803C88A31315C9E9983 /* Pods-nhap3.debug.xcconfig */;
+			baseConfigurationReference = B4079713CB4E6478602E31A6 /* Pods-nhap3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QSQ8N6LQ4P;
+				DEVELOPMENT_TEAM = N4NC8GYX67;
 				INFOPLIST_FILE = nhap3/support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = abc.nhap3;
+				PRODUCT_BUNDLE_IDENTIFIER = abcd.nhap3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,17 +463,18 @@
 		};
 		B5F297A622438F2800156002 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16D0AAAD9A2B7D0C212E22C3 /* Pods-nhap3.release.xcconfig */;
+			baseConfigurationReference = EC9BBD6B32744503D4D88AB9 /* Pods-nhap3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QSQ8N6LQ4P;
+				DEVELOPMENT_TEAM = N4NC8GYX67;
 				INFOPLIST_FILE = nhap3/support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = abc.nhap3;
+				PRODUCT_BUNDLE_IDENTIFIER = abcd.nhap3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

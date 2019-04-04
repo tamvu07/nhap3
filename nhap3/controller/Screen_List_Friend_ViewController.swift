@@ -22,6 +22,12 @@ class Screen_List_Friend_ViewController: UIViewController,UITableViewDataSource,
         sieunhan(hinh: "anh_dai_dien", ten: "hinh 5")
     ]
     
+    @IBAction func bt_back(_ sender: Any) {
+        let scr = storyboard?.instantiateViewController(withIdentifier: "isLogin") as! Screen_List_Chat_ViewController
+        present(scr, animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         table_view.dataSource = self
